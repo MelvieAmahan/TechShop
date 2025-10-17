@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="layouts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 10px 20px 25px rgb(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; /* default color */
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s ease; /* smooth color change */
+        }
+
+        nav a:hover {
+            color: #ff9800; /* color when hovered (orange in this example) */
+        }
+
+      
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+            font-family: 'Poppins', sans-serif;
+            color: #c58403;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            min-height: 100vh;
+        }
+
+        .gallery {
+            padding: 40px 0;
+            background: linear-gradient(to bottom, #0099ff, #0077cc);
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1100px;
+        }
+
+        .gallery-container img {
+            width: 200px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.08);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+
+    </style>
+<body>
+    <header>
+        <h1>Circuit One</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          
+        </nav>
+    </header>
+    <section class="gallery">
+        <div class="gallery-container">
+            <img src="images/android.webp"alt ="Android Phones">
+            <img src="images/mackbook.jpg"alt ="Laptop">
+            <img src="images/pc.jpg"alt ="PC parts">
+        </div>
+    </section>
+    
+</body>
+</html> 
