@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background-color: #0E1117;
+        color: #FFFFFF;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    form {
+        background-color: #1A1F25;
+        padding: 40px 45px;
+        border-radius: 10px;
+        width: 500px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #btn {
+        background-color: #45E6E3;
+        color: #000000;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    header {
+        justify-content: left;
+        display: flex;
+        background-color: #393d46;
+        color: #45E6E3;   
+    }
+    form p {
+        color: #A0A0A0;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    form p a {
+        color: #45E6E3;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    form input {
+        background-color: #3A3D41;
+        border: none;
+        border-radius: 5px;
+        padding: 12px;
+        color: #FFFFFF;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        outline: none;
+    }
+
+    form input::placeholder {
+        color: #B5B5B5;
+    }
+
+    form h1 {
+        color: #45E6E3;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+
+    <div class="container">
+        
+        <form>
+
+            <h1>Create Account</h1>
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirm password" placeholder="Confirm Password">
+            <button id="btn">Sign Up</button>
+            <p>Already have an Account? <a href="login.html">Log In</a></p>
+        </form>
+
+    </div>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Add your signup logic here
+            alert('Signup button clicked!');
+        });
+    </script>
+</body>
+</html>

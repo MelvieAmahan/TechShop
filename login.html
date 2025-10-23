@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circuit One - Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+    }
+
+
+    body {
+      background-color: #0E1117;
+      color: #FFFFFF;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+    }
+
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+
+    .logo-text {
+      color: #45E6E3;
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .login-box {
+      background-color: #1A1F25;
+      padding: 40px 45px;
+      border-radius: 10px;
+      width: 500px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .login-box form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .login-box input {
+      background-color: #3A3D41;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      color: #FFFFFF;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    .login-box input::placeholder {
+      color: #B5B5B5;
+    }
+
+    .login-box button {
+      background-color: #45E6E3;
+      color: #0E1117;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background-color: #36D0CE;
+    }
+
+    .login-box p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #A0A0A0;
+    }
+
+    .login-box a {
+      color: #45E6E3;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+
+    h1 {
+      color: #36D0CE;
+      padding: 10px;
+
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #0E1117;
+      color: #6b6666;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="login-box">
+      <form>
+        <h1>Welcome To Circuit One!</h1>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button id="btn">LOG IN</button>
+      </form>
+      <p>Don’t have an account? <a href="signup.html">Create Account</a></p>
+    </div>
+  </div>
+
+  <footer>@2025 CircuitOne All Rights Reserved</footer>
+  <script>
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function (event) {
+      event.preventDefault();
+
+
+      window.location.href = 'homepage.html';
+    });
+
+
+  </script>
+
+
+
+</body>
+
+</html>
